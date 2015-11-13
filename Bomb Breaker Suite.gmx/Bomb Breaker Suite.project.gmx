@@ -46,6 +46,12 @@
     <sprites name="Module Sprites">
       <sprite>sprites\spr_normal_wire_module</sprite>
     </sprites>
+    <sprites name="Cork Board">
+      <sprites name="Post-Its">
+        <sprite>sprites\spr_checklist</sprite>
+        <sprite>sprites\spr_normal_wires</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -71,21 +77,22 @@
   <objects name="objects">
     <object>objects\obj_game</object>
     <objects name="Normal Wires">
-      <object>objects\obj_red_wire</object>
-      <object>objects\obj_yellow_wire</object>
-      <object>objects\obj_black_wire</object>
-      <object>objects\obj_white_wire</object>
-      <object>objects\obj_blue_wire</object>
       <object>objects\obj_normal_wire</object>
     </objects>
     <objects name="Modules">
       <object>objects\obj_normal_wire_module</object>
       <object>objects\obj_button_module</object>
     </objects>
+    <objects name="Cork Board">
+      <objects name="Post-Its">
+        <object>objects\obj_checklist_postit</object>
+        <object>objects\obj_normal_wires_postit</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_main_board_room</room>
     <room>rooms\rm_normal_wires</room>
-    <room>rooms\room_backup</room>
     <room>rooms\rm_button</room>
   </rooms>
   <help>
