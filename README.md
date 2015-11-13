@@ -3,23 +3,28 @@ Tools to solve modules in the game "Keep Talking and Nobody Explodes". Made in G
 
 This is a work in progress. This tool will provide a hub and a set of tools to be able to solve modules in Keep Talking.
 
-Current "Working" modules:
+Current Modules
 
-Normal Wires
-Keypads
+"Working" modules
+=======
 
-Planned:
+* Normal Wires
+* Keypads
 
-The Button
-Memory
-Complicated Wires
-Wire Sequences
-Mazes
-Passwords
-Needy Module: Knob
+Planned
+=======
 
-Finalized:
+* The Button
+* Memory
+* Complicated Wires
+* Wire Sequences
+* Mazes
+* Passwords
+* Needy Module: Knob
 
-N/A
+Finalized
+=======
 
-Note: working have their logic figured out but need new input methods or other updates/quality of life things
+* N/A
+
+Note: working modules have their logic figured out but need new input methods/UI or other updates/quality of life things
