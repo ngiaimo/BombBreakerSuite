@@ -8,10 +8,86 @@
   <sprites name="sprites">
     <sprites name="Keypad Sprites">
       <sprite>sprites\spr_black_star</sprite>
+      <sprite>sprites\spr_right_c_dot</sprite>
+      <sprite>sprites\spr_alien_3</sprite>
+      <sprite>sprites\spr_paragraph</sprite>
+      <sprite>sprites\spr_smiley</sprite>
+      <sprite>sprites\spr_b_t</sprite>
+      <sprite>sprites\spr_trident</sprite>
+      <sprite>sprites\spr_weird_6</sprite>
+      <sprite>sprites\spr_backward_3</sprite>
+      <sprite>sprites\spr_rail_track</sprite>
+      <sprite>sprites\spr_a_e</sprite>
+      <sprite>sprites\spr_weird_h</sprite>
+      <sprite>sprites\spr_omega</sprite>
+      <sprite>sprites\spr_t_tripod</sprite>
+      <sprite>sprites\spr_x_i</sprite>
+      <sprite>sprites\spr_empty_star</sprite>
+      <sprite>sprites\spr_sack</sprite>
+      <sprite>sprites\spr_upside_question</sprite>
+      <sprite>sprites\spr_copyright</sprite>
+      <sprite>sprites\spr_curly</sprite>
+      <sprite>sprites\spr_droopy_r</sprite>
+      <sprite>sprites\spr_lambda</sprite>
+      <sprite>sprites\spr_a_t</sprite>
+      <sprite>sprites\spr_o</sprite>
+      <sprite>sprites\spr_droopy_h</sprite>
+      <sprite>sprites\spr_bolt</sprite>
+      <sprite>sprites\spr_backward_c_dot</sprite>
+    </sprites>
+    <sprites name="Wire Sprites">
+      <sprite>sprites\spr_red_wire</sprite>
+      <sprite>sprites\spr_blue_wire</sprite>
+      <sprite>sprites\spr_white_wire</sprite>
+      <sprite>sprites\spr_yellow_wire</sprite>
+      <sprite>sprites\spr_black_wire</sprite>
+      <sprite>sprites\spr_default_wire</sprite>
+    </sprites>
+    <sprites name="Module Sprites">
+      <sprite>sprites\spr_normal_wire_module</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <scripts name="Keypad">
+      <script>scripts\solve_keypad.gml</script>
+      <script>scripts\check_array.gml</script>
+    </scripts>
+    <scripts name="Wires">
+      <scripts name="Normal Wires">
+        <script>scripts\solve_normal_wires.gml</script>
+        <script>scripts\solve_three_normal_wires.gml</script>
+        <script>scripts\solve_four_normal_wires.gml</script>
+        <script>scripts\solve_five_normal_wires.gml</script>
+        <script>scripts\solve_six_normal_wires.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="Button">
+      <script>scripts\solve_button.gml</script>
+      <script>scripts\check_strip.gml</script>
+    </scripts>
+  </scripts>
+  <objects name="objects">
+    <object>objects\obj_game</object>
+    <objects name="Normal Wires">
+      <object>objects\obj_red_wire</object>
+      <object>objects\obj_yellow_wire</object>
+      <object>objects\obj_black_wire</object>
+      <object>objects\obj_white_wire</object>
+      <object>objects\obj_blue_wire</object>
+      <object>objects\obj_normal_wire</object>
+    </objects>
+    <objects name="Modules">
+      <object>objects\obj_normal_wire_module</object>
+      <object>objects\obj_button_module</object>
+    </objects>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_normal_wires</room>
+    <room>rooms\room_backup</room>
+    <room>rooms\rm_button</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
