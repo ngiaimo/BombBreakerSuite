@@ -48,8 +48,9 @@
     </sprites>
     <sprites name="Cork Board">
       <sprites name="Post-Its">
-        <sprite>sprites\spr_checklist</sprite>
-        <sprite>sprites\spr_normal_wires</sprite>
+        <sprite>sprites\spr_checklist_postit</sprite>
+        <sprite>sprites\spr_blank_posit</sprite>
+        <sprite>sprites\spr_normal_wires_postit</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -74,6 +75,9 @@
       <script>scripts\check_strip.gml</script>
     </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_checklist</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_game</object>
     <objects name="Normal Wires">
@@ -85,14 +89,14 @@
     </objects>
     <objects name="Cork Board">
       <objects name="Post-Its">
-        <object>objects\obj_checklist_postit</object>
-        <object>objects\obj_normal_wires_postit</object>
+        <object>objects\object_postit</object>
       </objects>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main_board_room</room>
     <room>rooms\rm_normal_wires</room>
+    <room>rooms\rm_checklist</room>
     <room>rooms\rm_button</room>
   </rooms>
   <help>
