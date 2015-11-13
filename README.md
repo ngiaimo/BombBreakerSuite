@@ -6,13 +6,13 @@ This is a work in progress. This tool will provide a hub and a set of tools to b
 Current Modules
 
 "Working" modules
-=======
+-----------
 
 * Normal Wires
 * Keypads
 
 Planned
-=======
+-----------
 
 * The Button
 * Memory
@@ -23,7 +23,7 @@ Planned
 * Needy Module: Knob
 
 Finalized
-=======
+-----------
 
 * N/A
 
