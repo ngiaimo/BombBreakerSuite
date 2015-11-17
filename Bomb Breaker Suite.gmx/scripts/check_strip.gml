@@ -3,11 +3,11 @@
 var button_strip = argument0;
 
 if (button_strip == "blue") {
-    return 4;
+    return "Release when there is a 4 in any position";
 }
 
 if (button_strip == "yellow") {
-    return 5;
+    return "Release when there is a 5 in any position";
 }
 
-return 1;
+return "Release when there is a 1 in any position";
