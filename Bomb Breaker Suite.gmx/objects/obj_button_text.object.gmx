@@ -32,6 +32,8 @@ image_speed = 0;
 button_text[0] = "Abort";
 button_text[1] = "Detonate";
 button_text[2] = "Hold";
+button_text[3] = "Press";
+button_text[4] = "Other";
 
 text_index = 0;
 button_word = button_text[text_index];
