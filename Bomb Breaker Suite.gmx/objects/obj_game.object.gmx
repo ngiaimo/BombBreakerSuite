@@ -26,9 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>/// test game
-global.batteries = 3;
-global.serial_vowel = true;
-global.serial_odd = true;
+global.batteries = 0;
+global.serial_vowel = false;
+global.serial_odd = false;
 global.parallel_port = false;
 global.lit_car = false;
 global.lit_frk = false;
@@ -84,14 +84,16 @@ room_goto(rm_main_board_room);
           <argument>
             <kind>1</kind>
             <string>/// Draw a gui depending on the module
-
 switch(room) {
-    case rm_checklist:
+    /*case rm_checklist:
         draw_set_font(fnt_checklist);
-        draw_text_colour(100, 125, "Batteries: ", c_black, c_black, c_black, c_black, 1);
-        draw_text_colour(100, 200, "Serial has vowel: ", c_black, c_black, c_black, c_black, 1);
-        draw_text_colour(100, 275, "Serial ends with odd: ", c_black, c_black, c_black, c_black, 1);
-        draw_text_colour(100, 350, "parallel Port: ", c_black, c_black, c_black, c_black, 1);
+        draw_set_halign(fa_left);
+        draw_text_colour(150, 125, "Batteries: ", c_black, c_black, c_black, c_black, 1);
+        draw_text_colour(150, 200, "Serial has vowel: ", c_black, c_black, c_black, c_black, 1);
+        draw_text_colour(150, 275, "Serial ends with odd: ", c_black, c_black, c_black, c_black, 1);
+        draw_text_colour(150, 350, "parallel Port: ", c_black, c_black, c_black, c_black, 1);
+    break;*/
+    default:
     break;
 }
 </string>
