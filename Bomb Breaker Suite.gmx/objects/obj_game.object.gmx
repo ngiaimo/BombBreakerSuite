@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// test game
+            <string>/// Instantiate global variables
 global.batteries = 0;
 global.serial_vowel = false;
 global.serial_odd = false;

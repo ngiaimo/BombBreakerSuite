@@ -84,12 +84,21 @@
         <script>scripts\solve_five_normal_wires.gml</script>
         <script>scripts\solve_six_normal_wires.gml</script>
       </scripts>
+      <scripts name="Complicated Wires">
+        <script>scripts\solve_complicated_wires.gml</script>
+        <script>scripts\solve_white_complicated_wire.gml</script>
+        <script>scripts\solve_blue_complicated_wire.gml</script>
+        <script>scripts\solve_red_complicated_wire.gml</script>
+        <script>scripts\solve_redblue_complicated_wire.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Button">
       <script>scripts\solve_button.gml</script>
       <script>scripts\check_strip.gml</script>
     </scripts>
-    <script>scripts\increment_image_index.gml</script>
+    <scripts name="Helper Scripts">
+      <script>scripts\increment_image_index.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_checklist</font>
