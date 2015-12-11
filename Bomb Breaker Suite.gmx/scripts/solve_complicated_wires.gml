@@ -4,7 +4,7 @@ star = argument1;
 led = argument2;
 solution = noone;
 
-switch(color) {
+switch(wire_color) {
     case "white":
         solution = solve_white_complicated_wire(star, led);
     break;
