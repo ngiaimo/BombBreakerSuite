@@ -10,13 +10,13 @@ Current Modules
 
 * Normal Wires
 * Keypads
+* The Button
+* Complicated Wires
 
 Planned
 -----------
 
-* The Button
 * Memory
-* Complicated Wires
 * Wire Sequences
 * Mazes
 * Passwords
