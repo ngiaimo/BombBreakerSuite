@@ -28,6 +28,7 @@
             <string>/// Initialize object
 image_speed = 0;
 wire_color = "redblue";
+solution = noone;
 </string>
           </argument>
         </arguments>
@@ -100,8 +101,12 @@ increment_image_index();
             <kind>1</kind>
             <string>/// Cut or not cut
 if (instance_exists(redblue_wire_led) &amp;&amp; instance_exists(redblue_wire_star)) {
-    show_debug_message("Wire color is: " + wire_color + ". LED is: " + string(redblue_wire_led.led_on) + ". Star is: " + string(redblue_wire_star.has_star) + ".");
-    show_debug_message(solve_complicated_wires(wire_color, redblue_wire_star.has_star, redblue_wire_led.led_on));
+    solution = solve_complicated_wires(wire_color, redblue_wire_star.has_star, redblue_wire_led.led_on);
+}
+
+if (instance_exists(obj_complex_result)) {
+    obj_complex_result.animate = true;
+    obj_complex_result.state = solution;
 }
 </string>
           </argument>

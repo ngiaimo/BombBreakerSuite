@@ -51,6 +51,7 @@
         <sprite>sprites\spr_com_red_wire</sprite>
         <sprite>sprites\spr_comp_wires_star</sprite>
         <sprite>sprites\spr_comp_wires_led</sprite>
+        <sprite>sprites\spr_comp_cut_dont_cut</sprite>
       </sprites>
     </sprites>
     <sprites name="Module Sprites">
@@ -126,6 +127,7 @@
         <object>objects\obj_complex_redblue_wire</object>
         <object>objects\obj_complex_star</object>
         <object>objects\obj_complex_led</object>
+        <object>objects\obj_complex_result</object>
       </objects>
     </objects>
     <objects name="Modules">

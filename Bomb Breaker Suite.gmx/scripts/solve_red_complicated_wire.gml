@@ -5,20 +5,20 @@ led = argument1;
 // Has just an LED or both LED and star: if batteries >= 2 cut else don't cut
 if (led) {
     if (global.batteries >= 2) {
-        return "CUT";
+        return CUT;
     } else {
-        return "DON'T CUT";
+        return DONTCUT;
     }
 }
 
 // No LED or star and has an even serial number
 if (!star) {
     if (!global.serial_odd) {
-        return "CUT";
+        return CUT;
     } else {
-        return "DON'T CUT";
+        return DONTCUT;
     }
 } else {
     // Only has star
-    return "CUT";
+    return CUT;
 }
