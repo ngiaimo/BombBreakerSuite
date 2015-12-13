@@ -56,6 +56,7 @@
     <instance objName="object_postit" x="320" y="128" name="inst_7DBAE2AC" locked="0" code="sprite_index = spr_normal_wires_postit;&#xA;attached_room = rm_normal_wires;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_postit" x="480" y="128" name="inst_163E084D" locked="0" code="sprite_index = spr_button_postit;&#xA;attached_room = rm_button;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_postit" x="640" y="128" name="inst_18A838CE" locked="0" code="sprite_index = spr_complicated_wires_postit;&#xA;attached_room = rm_complicated_wires;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_postit" x="800" y="128" name="inst_7DC973EF" locked="0" code="sprite_index = spr_keypad_postit;&#xA;attached_room = rm_keypad;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

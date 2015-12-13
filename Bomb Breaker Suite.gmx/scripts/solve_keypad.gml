@@ -6,6 +6,8 @@ var key_2 = argument1;
 var key_3 = argument2;
 var key_4 = argument3;
 
+//show_debug_message(string(key_1) + " " +string(key_2) + " " + string(key_3) + " " + string(key_4));
+
 // Column 1
 var col_1;
 col_1[0] = spr_o;

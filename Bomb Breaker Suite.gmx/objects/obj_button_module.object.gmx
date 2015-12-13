@@ -28,7 +28,7 @@
             <string>/// Initialize the button variables
 button_color = "grey";
 button_word = "Choose";
-button_strip = "grey";
+button_strip = "black";
 solved = false;
 solution = noone;
 </string>

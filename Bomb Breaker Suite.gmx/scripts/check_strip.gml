@@ -2,6 +2,10 @@
 
 var button_strip = argument0;
 
+if (button_strip == "black") {
+    return "Hold button and get strip color.";
+}
+
 if (button_strip == "blue") {
     return "Release when there is a 4 in any position";
 }
