@@ -29,6 +29,33 @@
 num_keys_selected = 0;
 solved = false;
 selected_keys = ds_list_create();
+solution_order = ds_list_create();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Destroy object
+ds_queue_destroy(solution);
+ds_list_destroy(selected_keys);
+ds_list_destroy(solution_order);
 </string>
           </argument>
         </arguments>
@@ -55,8 +82,12 @@ selected_keys = ds_list_create();
 if (num_keys_selected == 4) {
     if(!solved) {
         //show_debug_message("solving for " + string(ds_list_find_value(selected_keys, 0)) + " " + string(ds_list_find_value(selected_keys, 1)) + " " + string(ds_list_find_value(selected_keys, 2)) + " " + string(ds_list_find_value(selected_keys, 3)));
-        solve_keypad(ds_list_find_value(selected_keys, 0), ds_list_find_value(selected_keys, 1), ds_list_find_value(selected_keys, 2), ds_list_find_value(selected_keys, 3));
+        solution_order = solve_keypad(ds_list_find_value(selected_keys, 0), ds_list_find_value(selected_keys, 1), ds_list_find_value(selected_keys, 2), ds_list_find_value(selected_keys, 3));
         solved = true;
+        
+        for (var i = 0; i &lt; ds_list_size(solution_order); i++) {
+            show_debug_message(ds_list_find_value(solution_order, i));
+        }
     }
 } else {
     solved = false;

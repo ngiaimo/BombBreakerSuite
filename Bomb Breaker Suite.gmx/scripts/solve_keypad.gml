@@ -6,6 +6,8 @@ var key_2 = argument1;
 var key_3 = argument2;
 var key_4 = argument3;
 
+var solution_order = ds_list_create();
+
 //show_debug_message(string(key_1) + " " +string(key_2) + " " + string(key_3) + " " + string(key_4));
 
 // Column 1
@@ -89,16 +91,22 @@ while (ds_queue_empty(found_order) && col_num < array_length_1d(col_list)) {
     col_num++;
 }
 
+
 // Create the list to display click order
 var click_order = "";
 if (!ds_queue_empty(found_order)) {
     while (!ds_queue_empty(found_order)) {
-        click_order += (sprite_get_name(ds_queue_dequeue(found_order)) + " ");
+        //click_order += (sprite_get_name(ds_queue_dequeue(found_order)) + " ");
+        ds_list_add(solution_order, (ds_queue_dequeue(found_order)));
     }
 } else {
-    click_order = "Incorrect symbols provided!"
+    //click_order = "Incorrect symbols provided!"
+    show_debug_message("Incorrect symbols provided");
+    return solution_order;
 }
 
-show_message(click_order);
+//show_message(click_order);
 
 ds_queue_destroy(found_order);
+
+return solution_order;

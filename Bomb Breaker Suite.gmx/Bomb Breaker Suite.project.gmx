@@ -118,6 +118,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_checklist</font>
+    <font>fonts\fnt_keypad</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_game</object>
