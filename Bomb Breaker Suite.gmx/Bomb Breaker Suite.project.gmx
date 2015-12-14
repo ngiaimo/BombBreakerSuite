@@ -107,6 +107,12 @@
         <script>scripts\solve_red_complicated_wire.gml</script>
         <script>scripts\solve_redblue_complicated_wire.gml</script>
       </scripts>
+      <scripts name="Sequential Wires">
+        <script>scripts\solve_sequential_wires.gml</script>
+        <script>scripts\solve_red_sequential_wire.gml</script>
+        <script>scripts\solve_blue_sequential_wire.gml</script>
+        <script>scripts\solve_black_sequential_wire.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Button">
       <script>scripts\solve_button.gml</script>
