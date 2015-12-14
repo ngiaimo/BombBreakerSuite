@@ -121,6 +121,12 @@
     <scripts name="Helper Scripts">
       <script>scripts\increment_image_index.gml</script>
     </scripts>
+    <scripts name="Needy Modules">
+      <scripts name="Knob">
+        <script>scripts\solve_needy_knob.gml</script>
+        <script>scripts\find_pairs.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_checklist</font>

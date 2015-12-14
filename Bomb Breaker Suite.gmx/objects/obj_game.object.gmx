@@ -37,6 +37,22 @@ global.lit_frk = false;
 //solve_keypad(spr_black_star, spr_b_t, spr_smiley, spr_paragraph);
 //solve_keypad(spr_black_star, spr_b_t, spr_smiley, spr_omega);
 //solve_keypad(spr_smiley, spr_b_t, spr_black_star, spr_trident);
+
+/*top_row[0] = true;
+top_row[1] = false;
+top_row[2] = true;
+top_row[3] = false;
+top_row[4] = true;
+top_row[5] = false;
+
+bottom_row[0] = false;
+bottom_row[1] = false;
+bottom_row[2] = true;
+bottom_row[3] = true;
+bottom_row[4] = true;
+bottom_row[5] = false;
+
+show_message(solve_needy_knob(top_row, bottom_row));*/
 </string>
           </argument>
         </arguments>
