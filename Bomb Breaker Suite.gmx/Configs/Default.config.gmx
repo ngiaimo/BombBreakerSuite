@@ -457,10 +457,14 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="3">
+    <constants number="7">
+      <constant name="UP">0</constant>
       <constant name="BLANK">0</constant>
       <constant name="CUT">1</constant>
       <constant name="DONTCUT">2</constant>
+      <constant name="RIGHT">1</constant>
+      <constant name="DOWN">2</constant>
+      <constant name="LEFT">3</constant>
     </constants>
   </ConfigConstants>
 </Config>

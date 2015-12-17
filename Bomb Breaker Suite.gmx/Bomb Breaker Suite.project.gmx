@@ -69,6 +69,7 @@
         <sprite>sprites\spr_normal_wires_postit</sprite>
         <sprite>sprites\spr_complicated_wires_postit</sprite>
         <sprite>sprites\spr_button_postit</sprite>
+        <sprite>sprites\spr_needy_knob</sprite>
       </sprites>
       <sprites name="Bomb Options">
         <sprite>sprites\spr_serial_has_vowel</sprite>
@@ -84,6 +85,8 @@
       <sprite>sprites\spr_button</sprite>
       <sprite>sprites\spr_button_strip</sprite>
     </sprites>
+    <sprite>sprites\spr_knob_knob</sprite>
+    <sprite>sprites\spr_knob_led</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -120,6 +123,7 @@
     </scripts>
     <scripts name="Helper Scripts">
       <script>scripts\increment_image_index.gml</script>
+      <script>scripts\reset_1d_array.gml</script>
     </scripts>
     <scripts name="Needy Modules">
       <scripts name="Knob">
@@ -151,6 +155,7 @@
       <object>objects\obj_button_module</object>
       <object>objects\obj_complicated_wire_module</object>
       <object>objects\obj_keypad_module</object>
+      <object>objects\obj_knob_module</object>
     </objects>
     <objects name="Cork Board">
       <objects name="Post-Its">
@@ -168,7 +173,15 @@
       <object>objects\obj_button_strip</object>
       <object>objects\obj_button_text</object>
     </objects>
-    <object>objects\obj_keypad_key</object>
+    <objects name="Keypad">
+      <object>objects\obj_keypad_key</object>
+    </objects>
+    <objects name="Needy">
+      <objects name="Knob">
+        <object>objects\obj_knob_knob</object>
+        <object>objects\obj_knob_led</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main_board_room</room>
@@ -177,6 +190,7 @@
     <room>rooms\rm_button</room>
     <room>rooms\rm_complicated_wires</room>
     <room>rooms\rm_keypad</room>
+    <room>rooms\rm_needy_knob</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

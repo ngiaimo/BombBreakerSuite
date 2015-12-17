@@ -8,7 +8,7 @@
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
-  <colour>9033720</colour>
+  <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code></code>
   <enableViews>0</enableViews>
@@ -51,13 +51,20 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_game" x="32" y="32" name="inst_1D2A2285" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_postit" x="160" y="128" name="inst_1929287B" locked="0" code="sprite_index = spr_checklist_postit;&#xA;attached_room = rm_checklist;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_postit" x="320" y="128" name="inst_7DBAE2AC" locked="0" code="sprite_index = spr_normal_wires_postit;&#xA;attached_room = rm_normal_wires;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_postit" x="480" y="128" name="inst_163E084D" locked="0" code="sprite_index = spr_button_postit;&#xA;attached_room = rm_button;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_postit" x="640" y="128" name="inst_18A838CE" locked="0" code="sprite_index = spr_complicated_wires_postit;&#xA;attached_room = rm_complicated_wires;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_postit" x="800" y="128" name="inst_7DC973EF" locked="0" code="sprite_index = spr_keypad_postit;&#xA;attached_room = rm_keypad;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_postit" x="160" y="288" name="inst_FE97270D" locked="0" code="sprite_index = spr_needy_knob;&#xA;attached_room = rm_needy_knob;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_knob_module" x="0" y="0" name="inst_B90AABB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_knob_knob" x="480" y="224" name="inst_A3DE56FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_knob_led" x="320" y="352" name="inst_7691204C" locked="0" code="row = &quot;top&quot;;&#xA;led_id = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_knob_led" x="384" y="352" name="inst_21B04FD5" locked="0" code="row = &quot;top&quot;;&#xA;led_id = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_knob_led" x="448" y="352" name="inst_36E656EF" locked="0" code="row = &quot;top&quot;;&#xA;led_id = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_knob_led" x="512" y="352" name="inst_73116094" locked="0" code="row = &quot;top&quot;;&#xA;led_id = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_knob_led" x="576" y="352" name="inst_F70D574E" locked="0" code="row = &quot;top&quot;;&#xA;led_id = 4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_knob_led" x="640" y="352" name="inst_9D29C40D" locked="0" code="row = &quot;top&quot;;&#xA;led_id = 5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_knob_led" x="320" y="448" name="inst_6DF4B1CE" locked="0" code="row = &quot;bottom&quot;;&#xA;led_id = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_knob_led" x="384" y="448" name="inst_D1E5C558" locked="0" code="row = &quot;bottom&quot;;&#xA;led_id = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_knob_led" x="448" y="448" name="inst_8799CEC1" locked="0" code="row = &quot;bottom&quot;;&#xA;led_id = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_knob_led" x="512" y="448" name="inst_46CA9C5F" locked="0" code="row = &quot;bottom&quot;;&#xA;led_id = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_knob_led" x="576" y="448" name="inst_FF3A47B2" locked="0" code="row = &quot;bottom&quot;;&#xA;led_id = 4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_knob_led" x="640" y="448" name="inst_87E5D508" locked="0" code="row = &quot;bottom&quot;;&#xA;led_id = 5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

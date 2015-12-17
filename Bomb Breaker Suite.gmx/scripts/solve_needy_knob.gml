@@ -7,23 +7,24 @@ pairs = find_pairs(top_row, bottom_row);
 switch (pairs) {
     case 35:
     case 36:
-        return "UP";
+        return UP;
     break;
     
     case 0:
     case 236:
-        return "DOWN";
+        return DOWN;
     break;
     
     case 5:
-        return "LEFT";
+        return LEFT;
     break;
     
     case 135:
     case 13:
-        return "RIGHT";
+        return RIGHT;
     break;
     
     default:
+        return UP;
     break;
 }
