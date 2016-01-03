@@ -12,6 +12,7 @@ Current Modules
 * Keypads
 * The Button
 * Complicated Wires
+* Needy Module: Knob
 
 Planned
 -----------
@@ -20,7 +21,6 @@ Planned
 * Wire Sequences
 * Mazes
 * Passwords
-* Needy Module: Knob
 
 Finalized
 -----------
