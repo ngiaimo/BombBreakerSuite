@@ -13,12 +13,12 @@ Current Modules
 * The Button
 * Complicated Wires
 * Needy Module: Knob
+* Wire Sequences
 
 Planned
 -----------
 
 * Memory
-* Wire Sequences
 * Mazes
 * Passwords
 
@@ -27,4 +27,4 @@ Finalized
 
 * N/A
 
-Note: working modules have their logic figured out but need new input methods/UI or other updates/quality of life things
+Note: working modules have their logic figured out and can be used but have a rough UI and need usability improvements
