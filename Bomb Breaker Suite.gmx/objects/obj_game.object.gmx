@@ -33,6 +33,12 @@ global.parallel_port = false;
 global.lit_car = false;
 global.lit_frk = false;
 
+letter_array[0] = "a";
+letter_array[1] = "b";
+words = scr_solve_password(letter_array, letter_array, letter_array, letter_array, letter_array);
+for (var i = 0; i &lt; array_length_1d(words); i++) {
+    show_debug_message(words[i]);
+}
 //solve_keypad(spr_bolt, spr_a_t, spr_t_tripod, spr_backward_c_dot);
 //solve_keypad(spr_black_star, spr_b_t, spr_smiley, spr_paragraph);
 //solve_keypad(spr_black_star, spr_b_t, spr_smiley, spr_omega);

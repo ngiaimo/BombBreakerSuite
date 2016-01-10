@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>if (object_exists(obj_sequential_wire_module)) {
     draw_set_font(fnt_keypad);
+    draw_set_color(c_black);
     draw_text(x, y, obj_sequential_wire_module.blue_occurance);
 }
 </string>

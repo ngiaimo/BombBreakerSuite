@@ -142,6 +142,9 @@
         <script>scripts\find_pairs.gml</script>
       </scripts>
     </scripts>
+    <scripts name="Password">
+      <script>scripts\scr_solve_password.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_checklist</font>

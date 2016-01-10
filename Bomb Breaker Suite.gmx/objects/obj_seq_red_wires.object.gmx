@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>wire_color = "red";
+            <string>/// Initialize the object
+wire_color = "red";
 connected_letter = noone;
 </string>
           </argument>
@@ -49,7 +50,8 @@ connected_letter = noone;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sprite_index = spr_seq_uncut_red;
+            <string>/// Reset sprite
+sprite_index = spr_seq_uncut_red;
 </string>
           </argument>
         </arguments>
@@ -72,7 +74,8 @@ connected_letter = noone;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (object_exists(obj_sequential_wire_module)) {
+            <string>/// Increase counter and check if wire needs to be cut
+if (object_exists(obj_sequential_wire_module)) {
     obj_sequential_wire_module.red_occurance++;
     
     if (obj_sequential_wire_module.red_occurance &gt; 9) {
