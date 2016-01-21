@@ -147,6 +147,7 @@
     <scripts name="Password">
       <script>scripts\scr_solve_password.gml</script>
       <script>scripts\cull_map_zero_values.gml</script>
+      <script>scripts\scr_goto_next_letter.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
