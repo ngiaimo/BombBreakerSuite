@@ -79,6 +79,7 @@
         <sprite>sprites\spr_complicated_wires_postit</sprite>
         <sprite>sprites\spr_button_postit</sprite>
         <sprite>sprites\spr_needy_knob</sprite>
+        <sprite>sprites\spr_password_postit</sprite>
       </sprites>
       <sprites name="Bomb Options">
         <sprite>sprites\spr_serial_has_vowel</sprite>
@@ -98,6 +99,7 @@
       <sprite>sprites\spr_knob_knob</sprite>
       <sprite>sprites\spr_knob_led</sprite>
     </sprites>
+    <sprite>sprites\spr_password_letter</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -144,6 +146,7 @@
     </scripts>
     <scripts name="Password">
       <script>scripts\scr_solve_password.gml</script>
+      <script>scripts\cull_map_zero_values.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -205,6 +208,9 @@
         <object>objects\obj_knob_led</object>
       </objects>
     </objects>
+    <objects name="Password">
+      <object>objects\obj_password_letter</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main_board_room</room>
@@ -215,6 +221,7 @@
     <room>rooms\rm_keypad</room>
     <room>rooms\rm_needy_knob</room>
     <room>rooms\rm_sequential_wires</room>
+    <room>rooms\rm_password</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

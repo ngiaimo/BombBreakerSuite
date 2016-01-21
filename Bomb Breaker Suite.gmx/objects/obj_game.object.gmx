@@ -2,7 +2,7 @@
 <object>
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>-100</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -33,32 +33,48 @@ global.parallel_port = false;
 global.lit_car = false;
 global.lit_frk = false;
 
-letter_array[0] = "a";
-letter_array[1] = "b";
-words = scr_solve_password(letter_array, letter_array, letter_array, letter_array, letter_array);
-for (var i = 0; i &lt; array_length_1d(words); i++) {
-    show_debug_message(words[i]);
+letter_list_1 = ds_list_create();
+letter_list_2 = ds_list_create();
+letter_list_3 = ds_list_create();
+letter_list_4 = ds_list_create();
+letter_list_5 = ds_list_create();
+
+ds_list_add(letter_list_1, "h");
+ds_list_add(letter_list_1, "h");
+ds_list_add(letter_list_1, "h");
+ds_list_add(letter_list_1, "h");
+ds_list_add(letter_list_1, "h");
+ds_list_add(letter_list_1, "h");
+ds_list_add(letter_list_2, "i");
+ds_list_add(letter_list_2, "i");
+ds_list_add(letter_list_2, "i");
+ds_list_add(letter_list_2, "i");
+ds_list_add(letter_list_2, "i");
+ds_list_add(letter_list_2, "i");
+ds_list_add(letter_list_3, "i");
+ds_list_add(letter_list_3, "i");
+ds_list_add(letter_list_3, "i");
+ds_list_add(letter_list_3, "i");
+ds_list_add(letter_list_3, "i");
+ds_list_add(letter_list_3, "i");
+ds_list_add(letter_list_4, "i");
+ds_list_add(letter_list_4, "i");
+ds_list_add(letter_list_4, "i");
+ds_list_add(letter_list_4, "i");
+ds_list_add(letter_list_4, "i");
+ds_list_add(letter_list_4, "i");
+ds_list_add(letter_list_5, "i");
+ds_list_add(letter_list_5, "i");
+ds_list_add(letter_list_5, "i");
+ds_list_add(letter_list_5, "i");
+ds_list_add(letter_list_5, "i");
+words = scr_solve_password(letter_list_1, letter_list_2, letter_list_3, letter_list_4, letter_list_5);
+var map_ele = ds_map_find_first(words);
+while(is_string(map_ele)) {
+    var out = map_ele + ":" + string(words[? map_ele]);
+    map_ele = ds_map_find_next(words, map_ele);
+    show_debug_message(out);
 }
-//solve_keypad(spr_bolt, spr_a_t, spr_t_tripod, spr_backward_c_dot);
-//solve_keypad(spr_black_star, spr_b_t, spr_smiley, spr_paragraph);
-//solve_keypad(spr_black_star, spr_b_t, spr_smiley, spr_omega);
-//solve_keypad(spr_smiley, spr_b_t, spr_black_star, spr_trident);
-
-/*top_row[0] = true;
-top_row[1] = false;
-top_row[2] = true;
-top_row[3] = false;
-top_row[4] = true;
-top_row[5] = false;
-
-bottom_row[0] = false;
-bottom_row[1] = false;
-bottom_row[2] = true;
-bottom_row[3] = true;
-bottom_row[4] = true;
-bottom_row[5] = false;
-
-show_message(solve_needy_knob(top_row, bottom_row));*/
 </string>
           </argument>
         </arguments>
@@ -133,6 +149,22 @@ switch(room) {
         <useapplyto>0</useapplyto>
         <exetype>1</exetype>
         <functionname>action_current_room</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="9" enumb="27">
+      <action>
+        <libid>1</libid>
+        <id>332</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_end_game</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
