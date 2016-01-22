@@ -33,7 +33,7 @@ global.parallel_port = false;
 global.lit_car = false;
 global.lit_frk = false;
 
-letter_list_1 = ds_list_create();
+/*letter_list_1 = ds_list_create();
 letter_list_2 = ds_list_create();
 letter_list_3 = ds_list_create();
 letter_list_4 = ds_list_create();
@@ -74,7 +74,7 @@ while(is_string(map_ele)) {
     var out = map_ele + ":" + string(words[? map_ele]);
     map_ele = ds_map_find_next(words, map_ele);
     show_debug_message(out);
-}
+}*/
 </string>
           </argument>
         </arguments>
@@ -104,41 +104,6 @@ room_goto(rm_main_board_room);
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Draw a gui depending on the module
-switch(room) {
-    /*case rm_checklist:
-        draw_set_font(fnt_checklist);
-        draw_set_halign(fa_left);
-        draw_text_colour(150, 125, "Batteries: ", c_black, c_black, c_black, c_black, 1);
-        draw_text_colour(150, 200, "Serial has vowel: ", c_black, c_black, c_black, c_black, 1);
-        draw_text_colour(150, 275, "Serial ends with odd: ", c_black, c_black, c_black, c_black, 1);
-        draw_text_colour(150, 350, "parallel Port: ", c_black, c_black, c_black, c_black, 1);
-    break;*/
-    default:
-    break;
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="9" enumb="82">
       <action>
         <libid>1</libid>
@@ -156,7 +121,8 @@ switch(room) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (room != rm_password) {
+            <string>/// Reset the current room depending on which room is active
+if (room != rm_password) {
     room_restart();
 }
 </string>

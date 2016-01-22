@@ -41,149 +41,133 @@ var let_2 = argument1;
 var let_3 = argument2;
 var let_4 = argument3;
 var let_5 = argument4;
-var let_num = 1;
-
+var let_num;
+var map_ele = ds_map_find_first(password_word_map);
+var let_ele;
+var letter;
+var value;
 
 // Check for possible words with first letter, then cull the map of words with 0 score
-if(ds_list_size(let_1) > 0) {
-    var map_ele = ds_map_find_first(password_word_map);
+if(!ds_map_empty(let_1)) {
+    let_num = 1;
+    let_ele = ds_map_find_first(let_1);
     
-    for(var l1 = 0; l1 < ds_list_size(let_1); l1++) {
+    while(!(is_undefined(let_ele))) {
+    
+        letter = ds_map_find_value(let_1, let_ele);
         
-        var letter = ds_list_find_value(let_1, l1);
-        
-        while(is_string(map_ele)) {
+        while(!is_undefined(map_ele)) {
             if(string_char_at(map_ele, let_num) == letter){
-                var value = password_word_map[? map_ele];
-                ds_map_replace(password_word_map, map_ele, ++value);
+                value = password_word_map[? map_ele];
+                ds_map_replace(password_word_map, map_ele, value+1);
             }
             
             map_ele = ds_map_find_next(password_word_map, map_ele);
         }
         
         map_ele = ds_map_find_first(password_word_map);
+        let_ele = ds_map_find_next(let_1, let_ele);
     }
+    
+    password_word_map = cull_map_zero_values(password_word_map);
+    let_num++;
 }
 
-password_word_map = cull_map_zero_values(password_word_map);
-let_num++;
-
 // =======================================================================================
-
-// Check if map is size 1, if so it is solved and skip rest of the letters
-if(ds_map_size(password_word_map) != 1 && ds_list_size(let_2) > 0) {
-    // Check for possible words with the second letter, then cull the map of words with 0 score
+//Second Letter
+if(!ds_map_empty(password_word_map) && !ds_map_empty(let_2)) {
+    let_num = 2;
     map_ele = ds_map_find_first(password_word_map);
-    
-    for(var l2 = 0; l2 < ds_list_size(let_2); l2++) {
-    
-        var letter = ds_list_find_value(let_2, l2);
-        
-        while(is_string(map_ele)) {
-            //show_debug_message("Word is: " + map_ele + " letter is " + letter + " let_num is " + string(let_num) + " string_char_at returns " + string_char_at(map_ele, let_num));
+    let_ele = ds_map_find_first(let_2);
+    while(!is_undefined(let_ele)) {
+        letter = ds_map_find_value(let_2, let_ele);
+        while(!is_undefined(map_ele)) {
             if(string_char_at(map_ele, let_num) == letter){
-                var value = password_word_map[? map_ele];
-                ds_map_replace(password_word_map, map_ele, ++value);
+                value = password_word_map[? map_ele];
+                ds_map_replace(password_word_map, map_ele, value+1);
             }
             
             map_ele = ds_map_find_next(password_word_map, map_ele);
         }
         
+        let_ele = ds_map_find_next(let_2, let_ele);
         map_ele = ds_map_find_first(password_word_map);
     }
-} else {
-    return password_word_map;
+    
+    password_word_map = cull_map_zero_values(password_word_map);
 }
 
-password_word_map = cull_map_zero_values(password_word_map);
-let_num++;
-
 // =======================================================================================
-
-// Check if map is size 1, if so it is solved and skip rest of the letters
-if(ds_map_size(password_word_map) != 1 && ds_list_size(let_3) > 0) {
-    // Check for possible words with the third letter, then cull the map of words with 0 score
+// Third Letter
+if(!ds_map_empty(password_word_map) && !ds_map_empty(let_3)) {
+    let_num = 3;
     map_ele = ds_map_find_first(password_word_map);
-    
-    for(var l3 = 0; l3 < ds_list_size(let_3); l3++) {
-    
-        var letter = ds_list_find_value(let_3, l3);
-        
-        while(is_string(map_ele)) {
-            //show_debug_message("Word is: " + map_ele + " letter is " + letter + " let_num is " + string(let_num) + " string_char_at returns " + string_char_at(map_ele, let_num));
+    let_ele = ds_map_find_first(let_3);
+    while(!is_undefined(let_ele)) {
+        letter = ds_map_find_value(let_3, let_ele);
+        while(!is_undefined(map_ele)) {
             if(string_char_at(map_ele, let_num) == letter){
-                var value = password_word_map[? map_ele];
-                ds_map_replace(password_word_map, map_ele, ++value);
+                value = password_word_map[? map_ele];
+                ds_map_replace(password_word_map, map_ele, value+1);
             }
             
             map_ele = ds_map_find_next(password_word_map, map_ele);
         }
         
+        let_ele = ds_map_find_next(let_3, let_ele);
         map_ele = ds_map_find_first(password_word_map);
     }
-} else {
-    return password_word_map;
+    
+    password_word_map = cull_map_zero_values(password_word_map);
 }
 
-password_word_map = cull_map_zero_values(password_word_map);
-let_num++;
-
 // =======================================================================================
-
-// Check if map is size 1, if so it is solved and skip rest of the letters
-if(ds_map_size(password_word_map) != 1 && ds_list_size(let_4) > 0) {
-    // Check for possible words with the 4th letter, then cull the map of words with 0 score
+// Fourth Letter
+if(!ds_map_empty(password_word_map) && !ds_map_empty(let_4)) {
+    let_num = 4;
     map_ele = ds_map_find_first(password_word_map);
-    
-    for(var l4 = 0; l4 < ds_list_size(let_4); l4++) {
-    
-        var letter = ds_list_find_value(let_4, l4);
-        
-        while(is_string(map_ele)) {
-            //show_debug_message("Word is: " + map_ele + " letter is " + letter + " let_num is " + string(let_num) + " string_char_at returns " + string_char_at(map_ele, let_num));
+    let_ele = ds_map_find_first(let_4);
+    while(!is_undefined(let_ele)) {
+        letter = ds_map_find_value(let_4, let_ele);
+        while(!is_undefined(map_ele)) {
             if(string_char_at(map_ele, let_num) == letter){
-                var value = password_word_map[? map_ele];
-                ds_map_replace(password_word_map, map_ele, ++value);
+                value = password_word_map[? map_ele];
+                ds_map_replace(password_word_map, map_ele, value+1);
             }
             
             map_ele = ds_map_find_next(password_word_map, map_ele);
         }
         
+        let_ele = ds_map_find_next(let_4, let_ele);
         map_ele = ds_map_find_first(password_word_map);
     }
-} else {
-    return password_word_map;
+    
+    password_word_map = cull_map_zero_values(password_word_map);
 }
-
-password_word_map = cull_map_zero_values(password_word_map);
-let_num++;
 
 // =======================================================================================
-
-// Check if map is size 1, if so it is solved and skip rest of the letters
-
-    // Check for possible words with the 5th letter, then cull the map of words with 0 score
-map_ele = ds_map_find_first(password_word_map);
-
-if (ds_list_size(let_5) > 0) {   
-    for(var l5 = 0; l5 < ds_list_size(let_5); l5++) {
-        
-        var letter = ds_list_find_value(let_5, l5);
-            
-        while(is_string(map_ele)) {
-        //show_debug_message("Word is: " + map_ele + " letter is " + letter + " let_num is " + string(let_num) + " string_char_at returns " + string_char_at(map_ele, let_num));
+// Fifth Letter
+if(!ds_map_empty(password_word_map) && !ds_map_empty(let_5)) {
+    let_num = 5;
+    map_ele = ds_map_find_first(password_word_map);
+    let_ele = ds_map_find_first(let_5);
+    while(!is_undefined(let_ele)) {
+        letter = ds_map_find_value(let_5, let_ele);
+        while(!is_undefined(map_ele)) {
             if(string_char_at(map_ele, let_num) == letter){
-                var value = password_word_map[? map_ele];
-                ds_map_replace(password_word_map, map_ele, ++value);
+                value = password_word_map[? map_ele];
+                ds_map_replace(password_word_map, map_ele, value+1);
             }
-                
+            
             map_ele = ds_map_find_next(password_word_map, map_ele);
         }
-            
-            map_ele = ds_map_find_first(password_word_map);
+        
+        let_ele = ds_map_find_next(let_5, let_ele);
+        map_ele = ds_map_find_first(password_word_map);
     }
+    
+    password_word_map = cull_map_zero_values(password_word_map);
 }
-
 // =======================================================================================
 
 return password_word_map;
