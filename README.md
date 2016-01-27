@@ -14,17 +14,23 @@ Current Modules
 * Complicated Wires
 * Needy Module: Knob
 * Wire Sequences
+* Passwords
 
 Planned
 -----------
 
-* Memory
+* Simon Says
+
+Possible
+-----------
+
+* Morse Code
+* Who's on First
 * Mazes
-* Passwords
 
 Finalized
 -----------
 
 * N/A
 
-Note: working modules have their logic figured out and can be used but have a rough UI and need usability improvements
+Note: working modules have their logic figured out and can be used but have a rough UI and need usability improvements. Possible modules are ones that I am either not sure if I will do it or if I do, still considering if there is any way to improve the process.
