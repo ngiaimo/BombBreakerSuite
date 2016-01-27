@@ -80,6 +80,7 @@
         <sprite>sprites\spr_button_postit</sprite>
         <sprite>sprites\spr_needy_knob</sprite>
         <sprite>sprites\spr_password_postit</sprite>
+        <sprite>sprites\spr_simon_postit</sprite>
       </sprites>
       <sprites name="Bomb Options">
         <sprite>sprites\spr_serial_has_vowel</sprite>
@@ -100,6 +101,11 @@
       <sprite>sprites\spr_knob_led</sprite>
     </sprites>
     <sprite>sprites\spr_password_letter</sprite>
+    <sprites name="Simon Says">
+      <sprite>sprites\spr_simon_says_strikes</sprite>
+      <sprite>sprites\spr_simon_buttons_vowel</sprite>
+      <sprite>sprites\spr_simon_buttons_no_vowel</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -216,6 +222,12 @@
       <object>objects\obj_password_letter</object>
       <object>objects\obj_password_word_box</object>
     </objects>
+    <objects name="Memory">
+      <object>objects\obj_memory_module</object>
+    </objects>
+    <objects name="Simon Says">
+      <object>objects\obj_simon_says_module</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main_board_room</room>
@@ -227,6 +239,7 @@
     <room>rooms\rm_needy_knob</room>
     <room>rooms\rm_sequential_wires</room>
     <room>rooms\rm_password</room>
+    <room>rooms\rm_simon_says</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
