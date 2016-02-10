@@ -143,6 +143,8 @@
     <scripts name="Helper Scripts">
       <script>scripts\increment_image_index.gml</script>
       <script>scripts\reset_1d_array.gml</script>
+      <script>scripts\scr_find_key.gml</script>
+      <script>scripts\scr_display_map.gml</script>
     </scripts>
     <scripts name="Needy Modules">
       <scripts name="Knob">
@@ -155,8 +157,6 @@
       <script>scripts\cull_map_zero_values.gml</script>
       <script>scripts\scr_goto_next_letter.gml</script>
       <script>scripts\scr_add_letter.gml</script>
-      <script>scripts\scr_find_key.gml</script>
-      <script>scripts\scr_display_map.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -227,6 +227,7 @@
     </objects>
     <objects name="Simon Says">
       <object>objects\obj_simon_says_module</object>
+      <object>objects\obj_simon_says_enhanced_module</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -240,6 +241,7 @@
     <room>rooms\rm_sequential_wires</room>
     <room>rooms\rm_password</room>
     <room>rooms\rm_simon_says</room>
+    <room>rooms\rm_simon_says_2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

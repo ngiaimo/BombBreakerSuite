@@ -28,6 +28,51 @@
             <string>/// Create and initialize variables and properties
 image_speed = 0;
 strikes = image_index;
+
+// Create the solution maps
+
+no_strike_vowel = ds_map_create()
+no_strike_no_vowel = ds_map_create();
+one_strike_vowel = ds_map_create();
+one_strike_no_vowel = ds_map_create();
+two_strikes_vowel = ds_map_create();
+two_strikes_no_vowel = ds_map_create();
+
+// Map: No Strikes, Vowel
+ds_map_add(no_strike_vowel, "red", "blue");
+ds_map_add(no_strike_vowel, "blue", "red");
+ds_map_add(no_strike_vowel, "green", "yellow");
+ds_map_add(no_strike_vowel, "yllow", "green");
+
+// Map: No Strikes, No Vowel
+ds_map_add(no_strike_vowel, "red", "blue");
+ds_map_add(no_strike_vowel, "blue", "yellow");
+ds_map_add(no_strike_vowel, "green", "green");
+ds_map_add(no_strike_vowel, "yellow", "red");
+
+// Map: 1 Strike, Vowel
+ds_map_add(no_strike_vowel, "red", "yellow");
+ds_map_add(no_strike_vowel, "blue", "green");
+ds_map_add(no_strike_vowel, "green", "blue");
+ds_map_add(no_strike_vowel, "yellow", "red");
+
+// Map: 1 Strike, No Vowel
+ds_map_add(no_strike_vowel, "red", "red");
+ds_map_add(no_strike_vowel, "blue", "blue");
+ds_map_add(no_strike_vowel, "green", "yellow");
+ds_map_add(no_strike_vowel, "yellow", "green");
+
+// Map: 2 Strikes, Vowel
+ds_map_add(no_strike_vowel, "red", "green");
+ds_map_add(no_strike_vowel, "blue", "red");
+ds_map_add(no_strike_vowel, "green", "yellow");
+ds_map_add(no_strike_vowel, "yellow", "blue");
+
+// Map: 2 Strikes, No Vowel
+ds_map_add(no_strike_vowel, "red", "yellow");
+ds_map_add(no_strike_vowel, "blue", "green");
+ds_map_add(no_strike_vowel, "green", "blue");
+ds_map_add(no_strike_vowel, "yellow", "red");
 </string>
           </argument>
         </arguments>
@@ -82,6 +127,34 @@ image_index++;
         </arguments>
       </action>
     </event>
+    <event eventtype="7" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>ds_map_destroy(no_strike_vowel);
+ds_map_destroy(no_strike_no_vowel);
+ds_map_destroy(one_strike_vowel);
+ds_map_destroy(one_strike_no_vowel);
+ds_map_destroy(two_strikes_vowel);
+ds_map_destroy(two_strikes_no_vowel);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -101,12 +174,6 @@ image_index++;
             <kind>1</kind>
             <string>/// Draw the strikes image and the click diagram
 draw_self();
-
-if(global.serial_vowel) {
-    draw_sprite(spr_simon_buttons_vowel, strikes, room_width/2, room_height/2);
-} else {
-    draw_sprite(spr_simon_buttons_no_vowel, strikes, room_width/2, room_height/2);
-}
 </string>
           </argument>
         </arguments>
