@@ -63,14 +63,14 @@ if (instance_exists(obj_keypad_module)) {
         } else {
             selected = false;
             increment_image_index();
-            ds_list_delete(obj_keypad_module.selected_keys, ds_list_find_value(obj_keypad_module.selected_keys, sprite_index));
+            ds_list_delete(obj_keypad_module.selected_keys, ds_list_find_index(obj_keypad_module.selected_keys, sprite_index));
             obj_keypad_module.num_keys_selected--;
         }
     } else {
         if (selected) {
             selected = false;
             increment_image_index();
-            ds_list_delete(obj_keypad_module.selected_keys, ds_list_find_value(obj_keypad_module.selected_keys, sprite_index));
+            ds_list_delete(obj_keypad_module.selected_keys, ds_list_find_index(obj_keypad_module.selected_keys, sprite_index));
             obj_keypad_module.num_keys_selected--;
         }
     }

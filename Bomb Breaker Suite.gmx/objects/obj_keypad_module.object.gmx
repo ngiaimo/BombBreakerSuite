@@ -85,9 +85,9 @@ if (num_keys_selected == 4) {
         solution_order = solve_keypad(ds_list_find_value(selected_keys, 0), ds_list_find_value(selected_keys, 1), ds_list_find_value(selected_keys, 2), ds_list_find_value(selected_keys, 3));
         solved = true;
         
-        for (var i = 0; i &lt; ds_list_size(solution_order); i++) {
+        /*for (var i = 0; i &lt; ds_list_size(solution_order); i++) {
             show_debug_message(ds_list_find_value(solution_order, i));
-        }
+        }*/
     }
 } else {
     solved = false;

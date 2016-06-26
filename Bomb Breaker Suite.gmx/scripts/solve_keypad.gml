@@ -102,6 +102,7 @@ if (!ds_queue_empty(found_order)) {
 } else {
     //click_order = "Incorrect symbols provided!"
     show_debug_message("Incorrect symbols provided");
+    ds_queue_destroy(found_order);
     return solution_order;
 }
 
