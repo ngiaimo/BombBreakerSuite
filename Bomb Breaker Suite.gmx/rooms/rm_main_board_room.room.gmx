@@ -60,7 +60,7 @@
     <instance objName="object_postit" x="160" y="288" name="inst_FE97270D" locked="0" code="sprite_index = spr_needy_knob;&#xA;attached_room = rm_needy_knob;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_postit" x="320" y="288" name="inst_6244FA86" locked="0" code="sprite_index = spr_seq_wires_postit;&#xA;attached_room = rm_sequential_wires;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_postit" x="480" y="288" name="inst_96682C40" locked="0" code="sprite_index = spr_password_postit;&#xA;attached_room = rm_password;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_postit" x="640" y="288" name="inst_34278E0E" locked="0" code="sprite_index = spr_simon_postit;&#xA;attached_room = rm_simon_says;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_postit" x="640" y="288" name="inst_34278E0E" locked="0" code="sprite_index = spr_simon_postit;&#xA;attached_room = rm_simon_says_2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

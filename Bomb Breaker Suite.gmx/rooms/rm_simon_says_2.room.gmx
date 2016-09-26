@@ -3,8 +3,8 @@
   <caption></caption>
   <width>480</width>
   <height>480</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>1</vsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -51,7 +51,11 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_simon_says_module" x="224" y="32" name="inst_6F767397" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_simon_light" x="222" y="123" name="inst_849CE7E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_simon_light" x="179" y="165" name="inst_03E3C5F3" locked="0" code="sprite_index = simon_red;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_simon_light" x="266" y="162" name="inst_817F9163" locked="0" code="sprite_index = simon_yellow;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_simon_light" x="219" y="205" name="inst_1D888337" locked="0" code="sprite_index = simon_green;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_simon_says_2_module" x="225" y="58" name="inst_F6F30DD1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

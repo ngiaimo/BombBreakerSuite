@@ -105,6 +105,12 @@
       <sprite>sprites\spr_simon_says_strikes</sprite>
       <sprite>sprites\spr_simon_buttons_vowel</sprite>
       <sprite>sprites\spr_simon_buttons_no_vowel</sprite>
+      <sprites name="SimonSays2">
+        <sprite>sprites\simon_blue</sprite>
+        <sprite>sprites\simon_green</sprite>
+        <sprite>sprites\simon_yellow</sprite>
+        <sprite>sprites\simon_red</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -228,6 +234,10 @@
     <objects name="Simon Says">
       <object>objects\obj_simon_says_module</object>
       <object>objects\obj_simon_says_enhanced_module</object>
+      <objects name="SimonSays2">
+        <object>objects\obj_simon_light</object>
+        <object>objects\obj_simon_says_2_module</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
